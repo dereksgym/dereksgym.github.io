@@ -95,18 +95,18 @@ mapFile[0] =
 'KKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKK                                                                                    \
 KNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN KLLLLLK                    AA  AA                                                           \
 KNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN  AA  NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN  KLLLK      A A A                                                                           \
-K N N N N N N N N N N N N N N N N N N N N N N N N N N N N N N       N N N N N N N N N N N N N N N N N N N    KLK                    5        5                                                         \
-K                                                                                                             K         KKKKKKKIIIIIIIIIIIIIIIIIIIIII   JJJJJJJJJJ                                L L L\
-K                                                      AA                                                     A        KLLLLLLLKILLLLLLLLLLLLLLLLLLLI   JMMMMMMMMJ                                LLLLL\
-K                                                              JJ                                             A       KLLLLLLLLLKIIIIIIIIIIIIIIIIIILI   JMMMMMMMMJ                                LLLLL\
-K                                                                                                             A      KKKKKKKKKKKKK                ILI   JMMMMMMMMJ                                LLLLL\
-K                                          AA                IIIIII                                                                               ILI   JMMMMMMMMJ                                LLLLL\
-K         A                            A        A   KKKKKKKK   II   KKKK                          A      KKKK   KKKK                           B  ILI   JMMMMMMMMJ                  A             LLLLL\
-K                                           5          KK      II    KK                                 KLLK     KLLK                        A   AILI   JMMMMMMMMJ                                LLLLL\
-K         I                          IIIIIIIIIIIIII    KK      II    KK KKKK              KKKKKK       KLLLK     KLLLK                        A A ILI   JMMMMMMMMJ             A   LLL   A        YLLLL\
-K1      JIIIJ  5         K  5  K           II          KK      II    KK  KK                 KK     5  KLLLLK     KLLLLK           5  5         A  ILI   JMMMMMMMMJ                5 5             ELLLL\
-KJJKKKKKKKKKKKKKKKJ   IIIIIIIIIIIIII       II          KK      II    KK  KK KKKK     KKKK   KK  LLLLLLKLLLLK     KLLLLK  LLL    LLLLLLLL    LLLLLLILI   JMMMMMMMMJ   LLLLLLLLL   LLLLLLL   LLLLLLLLLLLL\
-KJJJJJJJJIIIJJJJJJJ   KKKKKKKKKKKKKK       II          KK      II    KK  KK  KK KKKK  KK    KK  KKKKKKKKKKK       KKKKK  KKK    KKKKKKKK    KKKKKKILI   JMMMMMMMMJ   KKKKKKKKK   KKKKKKK   KKKKKKKKKKKK';
+J J J J J J J J J J J J J J J J J J J J J J J J J J J J J J J       N N N N N N N N N N N N N N N N N N N    KLK                    5        5                                                         \
+J                                                                                                             K         KKKKKKKIIIIIIIIIIIIIIIIIIIIII   JJJJJJJJJJ                                L L L\
+J                                                      AA                                                     A        KLLLLLLLKILLLLLLLLLLLLLLLLLLLI   JMMMMMMMMJ                                LLLLL\
+J                                                              JJ                                             A       KLLLLLLLLLKIIIIIIIIIIIIIIIIIILI   JMMMMMMMMJ                                LLLLL\
+J                                                                                                             A      KKKKKKKKKKKKK                ILI   JMMMMMMMMJ                                LLLLL\
+J                                          AA                IIIIII                                                                               ILI   JMMMMMMMMJ                                LLLLL\
+J         A                            A        A   KKKKKKKK   II   KKKK                          A      KKKK   KKKK                           B  ILI   JMMMMMMMMJ                  A             LLLLL\
+J                                           5          JJ      II    JJ                                 KLLK     KLLK                        A   AILI   JMMMMMMMMJ                                LLLLL\
+J         I                          IIIIIIIIIIIIII    JJ      II    JJ KKKK              KKKKKK       KLLLK     KLLLK                        A A ILI   JMMMMMMMMJ             A   LLL   A        YLLLL\
+J1      JIIIJ  5         K  5  K           II          JJ      II    JJ  JJ                 JJ     5  KLLLLK     KLLLLK           5  5         A  ILI   JMMMMMMMMJ                5 5 5           ELLLL\
+JJJKKKKKKKKKKKKKKKJ   IIIIIIIIIIIIII       II          JJ      II    JJ  JJ KKKK     KKKK   JJ  LLLLLLKLLLLK     KLLLLK  LLL    LLLLLLLL    LLLLLLILI   JMMMMMMMMJ   LLLLLLLLL   LLLLLLL   LLLLLLLLLLLL\
+JJJJJJJJJIIIJJJJJJJ   KKKKKKKKKKKKKK       II          JJ      II    JJ  JJ  JJ KKKK  JJ    JJ  KKKKKKKKKKK       KKKKK  KKK    KKKKKKKK    KKKKKKILI   JMMMMMMMMJ   KKKKKKKKK   KKKKKKK   KKKKKKKKKKKK';
 
 mapWidth[1] = 136;
 mapHeight[1] = 15;
@@ -1021,18 +1021,31 @@ function stopPropagation(keyCode, event) {
 <body bgcolor="black" text="white" link="red" alink="red"
   style="margin-left: 0; margin-top: 0; margin-right: 0; margin-bottom: 0;"
   onload="preinit();" onkeypress="return (event.keyCode >= 37 && event.keyCode <= 40) ? false : true;">
-<center><H1></H1></center>
-<center><H1></H1></center>	
-<div align="center">
+<STYLE type="text/css">
+body {
+  background-image: url("back.jpg");
+
+  background-repeat: no-repeat;
+}
+</style>
+
+
+</head>
+<body style="margin: 0pt;" onload="loading(); moomoo();" onkeypress="return (event.keyCode >= 37 &amp;&amp; event.keyCode <= 40) ? false : true;">
+
+
+
+<div style="position:absolute;top:30px;left:140px;">
+
 <canvas id="canvas" width="640" height="480">
-Sorry, but your web browser cannot run this game. Try updating to a more recent browser release.
+<font color="ffffff"><br><br><br><br>Your web browser is not good enough to play this game.<br><br>Update your browser to the latest version of firefox or chrome.<br><BR>INTERNET EXPLORER CAN NOT PLAY THIS GAME</font>
 </canvas>
-<div id="debug"/>
+
+
+
+
 </div>
-<script type="text/javascript">
-// debug objects
-var _debug = document.getElementById('debug');
-</script>
-<!--[if IE]><div>Game running slowly in Internet Explorer? Try a different browser.</div><![endif]-->
+  
+
 </body>
 </html>
